@@ -100,7 +100,20 @@ Let's see how it works.
 
 ---
 
-## Requirements
+## Aspire Dashboard
+
+- 
+
+---
+
+## Integration Testing
+
+- Aspire provides a testing framework to run integration tests against your services in a consistent environment.
+- Tests can be run locally or in CI, ensuring reliability across environments.
+
+---
+
+## Requirements (1/2)
 
 ### Local development environment
 
@@ -116,43 +129,12 @@ Let's see how it works.
 
 ---
 
-## Requirements
+## Requirements (2/2)
 
-### Cloud-based development environment 
+### Cloud-based development environment
 
-- GitHub Codespaces 
-- Dev Containers 
-
----
-
-## Aspire Samples 
-
-https://github.com/dotnet/aspire-samples
-
-
----
-
-## Aspire Community Toolkit 
-
-https://github.com/CommunityToolkit/Aspire
-
-
-
-
-
---- 
-
-## Aspire Integration Testing
-
-- Aspire provides a testing framework to run integration tests against your services in a consistent environment.
-- Tests can be run locally or in CI, ensuring reliability across environments.
-
----
-
-### Aspire Observability
-
-- Aspire includes built-in observability tools to monitor service health, logs, and performance metrics.
-- This helps developers quickly identify and resolve issues across the entire system.
+- GitHub Codespaces
+- Dev Containers
 
 ---
 
@@ -177,4 +159,4 @@ https://github.com/CommunityToolkit/Aspire
 
 ---
 
-<script type="module" src="https://alislin.github.io/mermaid-in-marp/render.cache.js"></script>
+## 
