@@ -14,30 +14,7 @@ backgroundColor: #1e1e1e
 
 ## The Architecture
 
-```mermaid
-graph LR
-FE["Frontend"]
-
-API["API<br/>Gateway"]
-SVC["Services"]
-
-DB["Database"]
-CACHE["Cache"]
-QUEUE["Queue"]
-
-FE --> API
-API --> SVC
-SVC --> DB
-SVC --> CACHE
-SVC --> QUEUE
-
-style FE fill:#2d5a7a
-style API fill:#3a6a8a
-style SVC fill:#3a6a8a
-style DB fill:#4a7a9a
-style CACHE fill:#4a7a9a
-style QUEUE fill:#4a7a9a
-```
+![](Architecture.png)
 
 All these components must work together, locally and in production.
 
@@ -63,9 +40,9 @@ Multiply by team size. This is expensive.
 Services have **hard dependencies** on:
 - Network configuration
 - Service discovery
-- Secret management
 - Port allocation
-- Environment variables
+- Environment variables & secret management
+- Knowledge of each resource (installation, best practices)
 
 **There's no unified way to manage this.**
 
@@ -75,8 +52,9 @@ Services have **hard dependencies** on:
 
 ### One Unified Foundation
 
-- Turn configuration headaches into repeatable code. 
-- Declare services once — Aspire generates consistent environments for local dev, integration tests, and production.
+- Turn configuration headaches into repeatable code.
+- Auto-discovery.
+- Applies best practices for each resource.
 
 ---
 
