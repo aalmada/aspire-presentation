@@ -5,16 +5,16 @@ class: invert
 paginate: true
 backgroundColor: #1e1e1e
 ---
-![height:200px](aspire-logo.svg)
 
+![height:200px](aspire-logo.svg)
 # Aspire
 ## Distributed Systems Without the Complexity
 
 ---
 
-## The Architecture
+## Modern distributed application development
 
-![](Architecture.png)
+![h:450](Architecture.png)
 
 All these components must work together, locally and in production.
 
@@ -38,10 +38,9 @@ Multiply by team size. This is expensive.
 ## The Root Issue
 
 Services have **hard dependencies** on:
-- Network configuration
 - Service discovery
 - Port allocation
-- Environment variables & secret management
+- Environment variables & secrets
 - Knowledge of each resource (installation, best practices)
 
 **There's no unified way to manage this.**
@@ -63,8 +62,9 @@ Services have **hard dependencies** on:
 - **Simple local setup** – One command, everything runs
 - **Easy onboarding** – New devs get started in minutes
 - **Realistic environment** – Dev mirrors production
-- **Test-friendly** – Run integration tests reliably
 - **Built-in observability** – See what's happening across all services
+- **GitHub Copilot integration** – Get support configuring and debugging services
+- **Test-friendly** – Run integration tests reliably
 
 ---
 
@@ -78,41 +78,37 @@ Let's see how it works.
 
 ---
 
+## Aspire CLI
+
+- Command-line tool for managing services and resources.
+- Start, stop, and monitor services with simple commands.
+- Automate common tasks and integrate with CI/CD pipelines.
+
+--- 
+
 ## Aspire Dashboard
 
-- 
+- Visualize service interactions and dependencies.
+- Centralized view of all services, their status, logs, and metrics.
+- Real-time updates and easy access to service details.
 
 ---
 
-## Integration Testing
+## Languages
 
-- Aspire provides a testing framework to run integration tests against your services in a consistent environment.
-- Tests can be run locally or in CI, ensuring reliability across environments.
-
----
-
-## Requirements (1/2)
-
-### Local development environment
-
-- **.NET**
-- **Docker** (or equivalent container runtime)
-- **IDE**
-    - **VS Code**
-        - **C# extension** (optional, for code editing)
-        - **Aspire extension** (optional, for integration)
-    - **Visual Studio**
-    - **JetBrains Rider**
-- **Aspire CLI** (optional, for command line usage)
+- .NET
+- Python and JavaScript (Node.js) since version 13 (November 2025)
 
 ---
 
-## Requirements (2/2)
+## Demo Time
 
-### Cloud-based development environment
-
-- GitHub Codespaces
-- Dev Containers
+Bookstore sample application with 4 services:
+- Frontend (Blazor)
+- API (ASP.NET Core)
+- Cache (Redis)
+- Blob storage (Azure Storage Emulator)
+- Database (PostgreSQL)
 
 ---
 
@@ -137,4 +133,18 @@ Let's see how it works.
 
 ---
 
-## 
+## Demo Time
+
+Create a new Aspire project, add services, and see how it simplifies development.
+- Frontend (Typescript/Vite/React)
+- Api (FastAPI/Python)
+- Cache (Redis)
+
+---
+
+## Conclusion
+
+- Aspire simplifies distributed application development by providing a unified foundation for managing services and resources.
+- It reduces onboarding time, creates a realistic development environment, and offers built-in observability.
+- With Aspire, teams can focus on building features instead of managing infrastructure.
+- Try Aspire today and experience the difference in your development workflow!
